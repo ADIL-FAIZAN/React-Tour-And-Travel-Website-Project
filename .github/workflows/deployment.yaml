@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    name: Print-Command-Execute
-    run: echo "Print Hello-World!"
+     - name: Print-Command-Execute
+       run: echo "Print Hello-World!"
