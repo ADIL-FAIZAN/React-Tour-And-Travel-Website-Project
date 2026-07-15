@@ -18,15 +18,15 @@ jobs:
     - name: List Files
       run: ls -la
 
-    # - name: Create-Docker-Image
-    #   run:  docker build -t adilfaizan1/travel-tour:v1 .
+    - name: Create-Docker-Image
+      run:  docker build -t adilfaizan1/travel-tour:v1 .
 
-    # - name: Login to Docker Hub
-    #   uses: docker/login-action@v3
+    - name: Login to Docker Hub
+      uses: docker/login-action@v3
     
-    #   with:
-    #    username: "adilfaizan1"
-    #    password: "adilxmax98"
+      with:
+       username: "adilfaizan1"
+       password: "adilxmax98"
 
-    # - name: Push-Image-To-Docker-Hub
-    #   run: docker push adilfaizan1/travel-tour:v1
+    - name: Push-Image-To-Docker-Hub
+      run: docker push adilfaizan1/travel-tour:v1
