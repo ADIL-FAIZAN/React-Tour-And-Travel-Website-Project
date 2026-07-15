@@ -10,11 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - name: Print-Command-Execute
-       run:  echo "Hello Adil"
-     
-     - name: Print-Learning-GitHub-Actions
-       run:  echo "Learning GitHub Actions"
 
-     - name: Print-Date
-       run:  date
+     - uses: actions/checkout@v4
+     - name: Print-Welcome-Command
+       run:  echo "Welcome"
+     
+     - name: Print-Current-Directory
+       run:  pwd
+
+     - name: Print-List-Files
+       run:  ls
+
+     - name: Print-Finish-Command
+       run:  echo "Finish"
