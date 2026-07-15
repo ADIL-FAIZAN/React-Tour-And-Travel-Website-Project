@@ -5,21 +5,26 @@ on:
 
 jobs:
 
-   build:
+  build:
 
     runs-on: ubuntu-latest
 
     steps:
 
-     - uses: actions/checkout@v4
-     - name: Print-Welcome-Command
-       run:  echo "Welcome"
-     
-     - name: Print-Current-Directory
-       run:  pwd
+    - name: Print-Building-Project-Command
+      run:  echo "Building Project..."
+    
+  test:
+     runs-on: ubuntu-latest
 
-     - name: Print-List-Files
-       run:  ls
+     steps:
+     - name: Print-Testing-Project-Command
+       run:  echo "Testing Project..."
 
-     - name: Print-Finish-Command
-       run:  echo "Finish"
+  deploy:
+      runs-on: ubuntu-latest
+
+      steps:     
+       
+       - name: Print-Deploy-Project-Command
+         run:  echo "Deploying Project..."
