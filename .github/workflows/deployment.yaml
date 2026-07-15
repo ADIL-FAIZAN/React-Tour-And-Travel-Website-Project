@@ -17,4 +17,4 @@ jobs:
        run:  echo "Learning GitHub Actions"
 
      - name: Print-Date
-       run:  echo date
+       run:  date
