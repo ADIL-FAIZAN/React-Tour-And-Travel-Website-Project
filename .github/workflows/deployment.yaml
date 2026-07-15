@@ -11,4 +11,10 @@ jobs:
 
     steps:
      - name: Print-Command-Execute
-       run: echo "Print Hello-World!"
+       run:  echo "Hello Adil"
+     
+     - name: Print-Learning-GitHub-Actions
+       run:  echo "Learning GitHub Actions"
+
+     - name: Print-Date
+       run:  echo date
