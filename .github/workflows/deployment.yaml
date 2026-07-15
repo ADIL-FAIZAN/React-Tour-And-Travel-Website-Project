@@ -19,8 +19,8 @@ jobs:
       uses: docker/login-action@v3
     
       with:
-      username: adilfaizan1
-      password: adilxmax98
+       username: "adilfaizan1"
+       password: "adilxmax98"
 
-      name: Push-Image-To-Docker-Hub
+    - name: Push-Image-To-Docker-Hub
       run: docker push adilfaizan1/travel-tour:v1
